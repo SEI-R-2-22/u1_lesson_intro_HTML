@@ -127,14 +127,12 @@ What is wrong with this block of code here?
       
    </a>
 
-
       </h3>
       
- </div>     
- 
+ </div>      
  ```
 
-Notice those little extra parts of the code, "href=" or "src="? Those are called "Data Attributes" and will be crucial once we begin connecting our HTML to CSS and JS
+Notice those little extra parts of the code, "href=" or "src="? Those are called "Data Attributes" and will be crucial once we begin connecting our HTML to CSS and JS. We'll discuss them a bit more later this lesson
 
 ```
 <button class="shopping-button" id="add-cart">
