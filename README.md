@@ -4,7 +4,7 @@
 
 ## Overview
 
-We'll be going over the basic's of HTML. In this lesson we'll review everything from creating to a HTML file, to building out a full html page.
+We'll be going over the basics of HTML. In this lesson we'll review everything from creating to a HTML file, to building out a full html page.
 This lesson covers HTML syntax and element types.
 
 
