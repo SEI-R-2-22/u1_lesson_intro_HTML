@@ -28,6 +28,10 @@ This lesson covers HTML syntax and element types.
 
 HTML stands for hyper text markup language. It has been in use since the advent of the internet. Every website you visit or interact with is built on or with HTML.
 
+If we think of a building, HTML is the actual architecture of the structure. How many stories will the building have? How many walls and doors do we need? Once we have our building (webpage) structured out and created, we can begin working on its style (CSS) and then plugging it in and getting some functionality (Javascript)
+
+Another analogy is the human body: Javascript is the Brain and nerves that control our actions. CSS is the skin and hair that define how we look. HTML would be our skeleton that everything is built up on. 
+
 
 ## Creating A HTML File
 
@@ -52,7 +56,6 @@ Open the `index.html` file you created. Once the file opens, type `!` and you sh
 
 This is known as "HTML Boilerplate" and it something you will see a variation of in every HTML file you find. Not all of it is necessary for each project you build - especially those "meta" tags, but as we build up more advanced sites which we can style, deploy and share, we will see what these do and what they are used for.
 
-When we get into units 2 and 4 with React and Vue, these HTML files will be auto-generated for us. But we are getting ahead of ourselvs here, lets take a few minutes to discuss what are working with here. 
 
 ### Stop and Discuss 5 min
 
@@ -79,10 +82,9 @@ Some require content to be placed within and then closed
 While others, known as "Void Tags" are simply enclosed within themselves and do not need a second </> to close them off
 
 This tag tells the computer we are using a standard ASCII letters and the characters we are familiar with (!, #, $, &, etc). If we wanted to use Mandarin, Cyrillic, Kanji, or characters from any other language, we may have to use some different charset tags (don't worry about this for now!)
+
 ```
-
 <meta charset="UTF-8"/>
-
 
 ```
 
@@ -106,11 +108,9 @@ This is written correctly, and will work. Don't worry about the content yet, we'
       
    </a>
 
-
 </div>
-
-
 ```
+
 
 Because our H3 is nested within the Anchor tag (a), it needs to be closed out before the Anchor is. Both of these have to be closed out before the Div is closed.
 
@@ -132,6 +132,22 @@ What is wrong with this block of code here?
  </div>     
  
  ```
+
+Notice those little extra parts of the code, "href=" or "src="? Those are called "Data Attributes" and will be crucial once we begin connecting our HTML to CSS and JS
+
+```
+<button class="shopping-button" id="add-cart">
+      <h4> Add to Cart </h4>
+</button>
+
+<button class="shopping-button" id="checkout">
+      <h4> Check Out </h4>
+</button>
+
+```
+
+By now you've seen, a lot of HTML is written in a streamlined, semantic style. If you want to add a button, an audio file, or a section to your page, you will simply use the <button>, <audio> and <section> tags respectively. 
+
 ### Block Elements
 
 Block elements, are `tags` that create a box. These elements stack `vertically` on the page in a column format.
