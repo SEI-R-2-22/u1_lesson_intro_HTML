@@ -28,7 +28,8 @@ This lesson covers HTML syntax and element types.
 
 HTML stands for hyper text markup language. It has been in use since the advent of the internet. Every website you visit or interact with is built on or with HTML.
 
-If we think of a building, HTML is the actual architecture of the structure. How many stories will the building have? How many walls and doors do we need? Once we have our building (webpage) structured out and created, we can begin working on its style (CSS) and then plugging it in and getting some functionality (Javascript)
+If we think of a building, HTML is the actual architecture of the structure. How many stories will the building have? How many walls and doors do we need? 
+How much text and how many images will our site have? Once we have our building (webpage) structured out and created, we can begin working on its style (CSS) and then plugging it in and getting some functionality (Javascript)
 
 Another analogy is the human body: Javascript is the Brain and nerves that control our actions. CSS is the skin and hair that define how we look. HTML would be our skeleton that everything is built up on. 
 
@@ -54,7 +55,7 @@ Open the `index.html` file you created. Once the file opens, type `!` and you sh
 **If emmet did not work for you, feel free to copy and paste the above code into your `index.html`.**
 
 
-This is known as "HTML Boilerplate" and it something you will see a variation of in every HTML file you find. Not all of it is necessary for each project you build - especially those "meta" tags, but as we build up more advanced sites which we can style, deploy and share, we will see what these do and what they are used for.
+This is known as "HTML Boilerplate" and it something you will see a variation of in every HTML file you find. Not all of it is necessary for each project you build - especially those "meta" tags, but as we build up more advanced sites which we can style, deploy to the web, and share, we will see what these do and what they are used for.
 
 
 ### Stop and Discuss 5 min
@@ -69,7 +70,7 @@ Talking points:
 HTML is built with elements or `tags`. For example, the `body` tag is an element. HTML supports many different tags, all of which serve different purposes and uses.
 
 
-Realistically, there are probably around 50-100 different HTML elements that exist. There are new elements being developed every few seasons/years (iFrames, which allow us to embed Youtube and other video URLs into our page is just one example of a  relatively modern one). There are some you will find that are outdated and have been replaced with more powerful elements. We will be doing a brief overview of some of these elements and their usage. The goal of this lesson is not to show you every single HTML tag, but rather to give you examples of some widely used ones, so that as you continuue on your journey, you will be able to figure out and use any that you encounter.  
+Realistically, there are probably around 50-100 different HTML elements that exist. There are new elements being developed every few seasons/years (iFrames, which allow us to embed Youtube and other video URLs into our page is just one example of a relatively modern one). There are some you will find that are outdated and have been replaced with more powerful elements. We will be doing a brief overview of some of these elements and their usage. The goal of this lesson is not to show you every single HTML tag, but rather to give you examples of some widely used ones, so that as you continuue on your journey, you will be able to figure out and use any that you encounter.  
 
 
 As you can see, elements are wrapped in our angle bracers <> and are closed with a slash </>.
@@ -81,7 +82,7 @@ Some require content to be placed within and then closed
 
 While others, known as "Void Tags" are simply enclosed within themselves and do not need a second </> to close them off
 
-This tag tells the computer we are using a standard ASCII letters and the characters we are familiar with (!, #, $, &, etc). If we wanted to use Mandarin, Cyrillic, Kanji, or characters from any other language, we may have to use some different charset tags (don't worry about this for now!)
+This tag tells the computer we are using a standard ASCII letters and the characters we are familiar with (!, #, $, &, etc). If we wanted to use Mandarin, Cyrillic, Kanji, or characters from any other language inside of our code, we might have to use some different charset tags (don't worry about this for now!)
 
 ```
 <meta charset="UTF-8"/>
@@ -140,6 +141,11 @@ Notice those little extra parts of the code, "href=" or "src="? Those are called
       <h4> Add to Cart </h4>
 </button>
 
+
+<button class="shopping-button" id="return">
+      <h4> Return to Store </h4>
+</button>
+
 <button class="shopping-button" id="checkout">
       <h4> Check Out </h4>
 </button>
@@ -191,10 +197,19 @@ Examples of inline elements:
 | `img`   | Used for displaying images on a page                                         |
 
 For a full list of HTML elements visit [W3 Schools](https://www.w3schools.com/html/html_blocks.asp)
+  
+You will not be asked to memorize every single one of these tags, and there will not be any exams testing how many of these you know. Like songs on the guitar, or recipes to cook, the goal is not to weigh down your brain memorizing all of these, but rather, understanding how to find resources to use whenever you need to use a less common tag. 
+  
+  
+But thats enough of an intro for now. Lets start writing some code!  
+  
 
 ### Adding Content To Our Page
 
 Head over to your `index.html`. Let's start by adding a nav to our document. Inside of the `nav` tags, add in a `ul` tag followed by 2 `li` tags inside of the `ul`.
+  
+A "ul" is an Unordered List. An "ol" will created an numerically ordered list. Nested within these we add our "li" elements, which will be the individual items of the list.
+  
 The first `li` should contain the text `Home` and the second should contain the text `About`:
 
 ```html
@@ -254,12 +269,13 @@ Add some content to your page! Here are the necessary requirements, but feel fre
 - Must have at least 1 `p` tag.
 - Must have at least 1 `section` tag.
 - The `section` must have 2 `div` tags inside of it.
+- Create an Ordered List, and add 2-3 different Li elements inside of it. Look how the computer will automatically serialize and style these lists for us!
 
 Feel free to add images if you finish early!
 
 ## Element Attributes
 
-All elements within a HTML document have attributes or properties. These properties allow us to differentiate between elements or asign the same style to multiple elements. (More On This Later)
+All elements within a HTML document can have attributes or properties. These properties allow us to differentiate between elements or asign the same style to multiple elements. (More On This Later)
 
 Here's a list of common html attributes:
 
