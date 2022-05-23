@@ -7,6 +7,8 @@
 We'll be going over the basic's of HTML. In this lesson we'll review everything from creating to a HTML file, to building out a full html page.
 This lesson covers HTML syntax and element types.
 
+
+
 ## Objectives
 
 - Learn how to create an HTML file
@@ -25,6 +27,7 @@ This lesson covers HTML syntax and element types.
 ## What is HTML?
 
 HTML stands for hyper text markup language. It has been in use since the advent of the internet. Every website you visit or interact with is built on or with HTML.
+
 
 ## Creating A HTML File
 
@@ -46,6 +49,11 @@ Open the `index.html` file you created. Once the file opens, type `!` and you sh
 
 **If emmet did not work for you, feel free to copy and paste the above code into your `index.html`.**
 
+
+This is known as "HTML Boilerplate" and it something you will see a variation of in every HTML file you find. Not all of it is necessary for each project you build - especially those "meta" tags, but as we build up more advanced sites which we can style, deploy and share, we will see what these do and what they are used for.
+
+When we get into units 2 and 4 with React and Vue, these HTML files will be auto-generated for us. But we are getting ahead of ourselvs here, lets take a few minutes to discuss what are working with here. 
+
 ### Stop and Discuss 5 min
 
 Talking points:
@@ -57,6 +65,73 @@ Talking points:
 
 HTML is built with elements or `tags`. For example, the `body` tag is an element. HTML supports many different tags, all of which serve different purposes and uses.
 
+
+Realistically, there are probably around 50-100 different HTML elements that exist. There are new elements being developed every few seasons/years (iFrames, which allow us to embed Youtube and other video URLs into our page is just one example of a  relatively modern one). There are some you will find that are outdated and have been replaced with more powerful elements. We will be doing a brief overview of some of these elements and their usage. The goal of this lesson is not to show you every single HTML tag, but rather to give you examples of some widely used ones, so that as you continuue on your journey, you will be able to figure out and use any that you encounter.  
+
+
+As you can see, elements are wrapped in our angle bracers <> and are closed with a slash </>.
+Some require content to be placed within and then closed
+```
+<h1> I am an H1 tag </h1>
+<h2> I am a smaller H2 tag </h2>
+```
+
+While others, known as "Void Tags" are simply enclosed within themselves and do not need a second </> to close them off
+
+This tag tells the computer we are using a standard ASCII letters and the characters we are familiar with (!, #, $, &, etc). If we wanted to use Mandarin, Cyrillic, Kanji, or characters from any other language, we may have to use some different charset tags (don't worry about this for now!)
+```
+
+<meta charset="UTF-8"/>
+
+
+```
+
+And of course, everyone's favorite, adding Images into our page. 
+
+```
+<img src="profilePicture.jpg" />
+```
+
+The most important rule to understand is that while some elements may be contained within others (known as nesting), they must be closed off before starting a separate set of elements.
+
+
+This is written correctly, and will work. Don't worry about the content yet, we'll discuss what these elements each do, but focus more on how we are structuring the elements.
+
+```
+<div>
+
+    <a href="www.google.com">
+      
+        <h3> Click here to go to Google! </h3>
+      
+   </a>
+
+
+</div>
+
+
+```
+
+Because our H3 is nested within the Anchor tag (a), it needs to be closed out before the Anchor is. Both of these have to be closed out before the Div is closed.
+
+
+What is wrong with this block of code here?
+
+```
+<div>
+
+  <a href="www.google.com">
+  
+      <h3> Click here to go to Google 
+      
+   </a>
+
+
+      </h3>
+      
+ </div>     
+ 
+ ```
 ### Block Elements
 
 Block elements, are `tags` that create a box. These elements stack `vertically` on the page in a column format.
